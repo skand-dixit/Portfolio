@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skand's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!---------------- Header  ---------------->
+    <div id="header">
+       <div class="container">
+        <nav>
+            <img src="Images/SDD.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h3>Hello, My name is <span>Skand Dev Dixit</span></h3>
+            <br>
+            <p>I am a <span>Front-End Web Developer</span><br>My experties is to develop websites design, graphic design, and may more...</p>
+        </div>
+    </div> 
+    <!---------------- header end  ---------------->
+
+    <!--------------------------about-------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="Images/about 1.jpg" >
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me </h1>
+                    <p>
+                        Hello, My name is <span>Skand Dev Dixit</span>  <br>
+                        An Information Technology undergraduate at Jaypee University, specializing in front-end web development.Currently pursuing a B.Tech degree, I bring a passion forcrafting visually appealing and user-friendly websites. With astrong foundation in Information Technology, I thrive onblending creativity with functionality. Eager to contribute myskills to real-world projects, I stay updated on the latestindustry trends to ensure innovative and responsive solutions.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Qualifications</p>
+                        <p class="tab-links " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2021 - Current</span><br>B.Tech (IT)<br>Jaypee University of Information Technology <br>Solan</li>
+                            <li><span>2021</span><br>Higher Secondary Education <br>SBBS Smriti Vidhyapeeth <br>Auraiya</li>
+                            <li><span>2019</span><br>Secondary School <br>Kahna International Academy <br>Ajitimal, Auraiya</li> 
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="skills">
+                        <ul style="flex-basis: 35%;">
+                            <li><i class="fa-regular fa-circle-dot"></i> HTML</li>
+                            <li><i class="fa-regular fa-circle-dot"></i> CSS</li>
+                            <li><i class="fa-regular fa-circle-dot"></i> JavaScript</li>
+                            <li><i class="fa-regular fa-circle-dot"></i> React.js</li>
+                            <li><i class="fa-regular fa-circle-dot"></i> Machine Learning</li>
+                            <li><i class="fa-regular fa-circle-dot"></i> Java</li>
+                            <li><i class="fa-regular fa-circle-dot"></i> Python</li>
+                            <li><i class="fa-regular fa-circle-dot"></i> MySQL</li>
+                            <li><i class="fa-regular fa-circle-dot"></i> MS Office</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-2022</span><br>Hostel Advisory Committee <br> Jaypee University of Information Technology</li>
+                            <li><span>2018-2019</span><br>House Captain <br>Kahna International Academy</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------about end-------------------------->
+
+    <!---------------------projects------------------>
+    <div id="project">
+         <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h3>CPU Scheduling and MA Simulator</h3>
+                    <p>This project represents an Operating System simulation developed using HTML, CSS, and JavaScript. The main objectives include solving CPU scheduling numericals and efficiently managing memory allocation. Byemploying front-end technologies, this project aims to enhance accessibilityand engagement for users interested in exploring and visualizing CPUscheduling and memory allocation complexities within an operating systemcontext.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h3>Shop Management System</h3>
+                    <p>The Shop Management System, built in Java with MySQL and JDBC,optimizes retail operations. It facilitates employee management, customerinteractions with secure logins, and efficient inventory control. This robustapplication ensures productivity by seamlessly handling tasks related toemployees, customers, and inventory.</p>
+                </div>      
+            </div>
+            <div class="work-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h3>Sentiment Analysis from Text</h3>
+                    <p>This project is based on Machine Learning and Natural Language Processing. It facilitates to filter out the large dataset of reviews, comments or tweets weather they are positive or negative .</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h3>Whatsapp Chat Analyzer</h3>
+                    <p>This project is developed using python, and its library such as  pandas, matplotlib and streamlit. It facilitates user to analyze their WhatsApp chats.</p>
+                </div>      
+            </div>
+         </div>
+    </div>
+    <!---------------------projects end  ------------------>
+
+    <!-------------------Contact------------->
+    <div id="contact">
+        <div class="container">
+           <h1 class="sub-title">Contact Me</h1>
+           <div class="contact-list">
+                <div class="row">
+                    <div class="contact-left">      
+                        <p><i class="fa-solid fa-paper-plane"></i>dixitskanddev@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>+91-7465956023</p>
+                        <div class="fa-brands">
+                            <a href="https://www.facebook.com/skanddev.dixit?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://instagram.com/skand_dixit?igshid=N2JhNDIwYjc=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://in.linkedin.com/in/skand-dev-dixit" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a> 
+                            <a href="https://github.com/skand-dixit" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <div class="resume">
+                            <a href="RESUME.pdf" class="btn btn2" target="_blank" >RESUME</a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <input type="integer" name="Number" placeholder="Your Contact" required>
+                            <textarea name="Message" rows="10" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>      
+           </div>
+        </div>
+    </div>
+    <!-------------------Contact end ------------->
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Made by Skand Dev Dixit</p>
+    </div>
+    
+    <!-- JavaScript for about section  -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body> 
+</html>
